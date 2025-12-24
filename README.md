@@ -29,8 +29,8 @@ server to keep the app alive on cloud platforms like Render, Railway, or Replit.
 📁 Project Structure
 
 telegram-gpt-chatbot-flask/
-├── main.py # Telegram bot logic
-├── example.py # Flask keep-alive server
+├── main.py
+├── example.py 
 ├── requirements.txt
 ├── README.md
-└── .env (optional)
+└── .env 
