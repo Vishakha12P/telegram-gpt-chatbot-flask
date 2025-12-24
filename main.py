@@ -6,12 +6,12 @@ from aiogram.filters import CommandStart
 
 from example import example
 
-bot = Bot(token="8563113575:AAFePhyALF4lun4MFLuNDUwgbS3LPGJkrbk")
+bot = Bot(token="BOT_TOKEN")
 dp = Dispatcher()
 openai.api_key = os.environ['OPENAI_API_KEY']
 example()
 
-@dp.message(CommandStart(["start", "help"]))
+@dp.message(CommandStart())
 async def welcome(message: types.Message):
   await message.reply('Hello! I am GPT chat bot, You can ask me anything :) ')
 
